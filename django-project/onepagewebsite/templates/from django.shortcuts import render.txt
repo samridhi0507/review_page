@@ -1,0 +1,12 @@
+from django.shortcuts import render
+from courseaa.models import courseaa
+
+def homepage(request):
+    if request.method =='POST':
+        name =request.POST.get['name',False]
+        email =request.POST['email']
+        password =request.POST['password']
+        new_signin = courseaa(name = name, email = email,password =password)
+        new_signin.save()
+
+    return render(request,"project.html")

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">essentia.dev</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Web Design & <br><span>Development</span> <br>Course</h1>
+            <p class="par">Our web development courses will help you learn to code and build your own <br>websites CSS, HTML, 
+                By enrolling in these training programs, 
+                you will be proficient<br> in web development, 
+                and you will master the skills in backend programming and<br> APIs that will round out your complete full-stack skills.  
+                These courses aim to make<br> you a certified web development professional. 
+                 </p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                    <form action=" " method="POST">
+                    {% csrf_token %}
+                    <h2>login</h2>
+                    <input type="name" name="name" placeholder="Enter Name Here">
+                    
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="password" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">submit</a></button>
+
+                    
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
